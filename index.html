@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For Mamii</title>
+<link rel="stylesheet" href="extend/style.css" />
+</head>
+<body>
+
+<div id="intro" class="message">
+  <h1>Hi Love,</h1>
+  <p>Bawi lang po sa letter na ginawa mo. 💜</p>
+  <div style="font-weight: bold; font-size: 1.2rem; margin-bottom: 20px;">
+    💌 Open me 💌
+  </div>
+  <button class="button" onclick="openIntro()">Open</button>
+</div>
+
+<div id="step1" class="message hidden">
+  My Lab lab, gusto mo bang malaman kung gaano kita kamahal? 💌
+  <br />
+  <button class="button" onclick="yesToStep2()">Yes</button>
+  <button class="button" onclick="noToMissMe()">No</button>
+</div>
+
+<div id="step2" class="message hidden">
+  Alam mo ba? Araw-araw, ikaw ang nagbibigay saya at kulay sa buhay ko. Sa bawat ngiti mo, kumpleto na ako. ❤️
+  <br />
+  <button class="button" onclick="showPics()">Next</button>
+</div>
+
+<div id="picsStep" class="message hidden">
+  Mga moments natin na hinding-hindi ko malilimutan...
+  <br />
+  <div class="pics">
+    <img src="extend/1000004968.jpg" alt="Tayo 1" />
+    <img src="extend/1000004974.jpg" alt="Tayo 2" />
+  </div>
+  <br />
+  Miss mo na ba ako? Kasi ako, miss na miss na kita Love. 💞
+  <br />
+  <button id="missYes" class="button" onclick="showTulip()">Yes</button>
+  <button id="missNo" class="button" onclick="noClicked()">No</button>
+</div>
+
+<div id="missMeStep" class="message hidden">
+  Miss mo ba ako, Love? 🥺
+  <br />
+  <button id="missYes2" class="button" onclick="showTulip()">Yes</button>
+  <button class="button" onclick="goBack('step1')">Back</button>
+</div>
+
+<div id="tulipStep" class="message hidden tulip-background">
+  <div>Ikaw lang at ako, habangbuhay. 💜 Palagi kitang mamahalin. 💜</div>
+  <div class="pics">
+    <img src="extend/1000004674.jpg" alt="Tayo 3" />
+    <img src="extend/photo_2025-05-29_13-58-19.jpg" alt="Tayo 4" />
+    <button class="button" onclick="goBack('intro')">Back</button>
+  </div>
+</div>
+
+<script src="extend/script.js"></script>
+</body>
+</html>
